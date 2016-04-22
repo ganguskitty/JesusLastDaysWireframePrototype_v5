@@ -69,6 +69,7 @@ var array_map = function(array, callback) {
   }
   else {
     for (i = 0; i < array_length; i++) {
+      var callback_params;
       callback_params = original_callback_params;
       callback_params.splice(0, 0, array[i]);
       array_return.push(callback.apply(this, callback_params));
@@ -646,7 +647,7 @@ GMaps.prototype.createControl = function(options) {
   control.style.cursor = 'pointer';
 
   if (options.disableDefaultStyles !== true) {
-    control.style.fontFamily = 'Roboto, Arial, sans-serif';
+    control.style.fontFamily = 'Helvetica, Arial, sans-serif';
     control.style.fontSize = '11px';
     control.style.boxShadow = 'rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px';
   }
