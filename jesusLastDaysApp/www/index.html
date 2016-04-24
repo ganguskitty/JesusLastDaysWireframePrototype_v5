@@ -57,656 +57,669 @@
 
 <body>
 
-<!--<div class="app">-->
-<!--<h1>PhoneGap</h1>-->
-<!--<div id="deviceready" class="blink">-->
-<!--<p class="event listening">Connecting to Device</p>-->
-<!--<p class="event received">Device is Ready</p>-->
-<!--</div>-->
-
-<!--</div>-->
-<div id="map"></div>
-<!--<div id="wrapper">-->
-<nav class='current'>
-    <!-- <h1>Jesus Last Days</h1> -->
-    <button class='button' id='logoButton'><img src="img/logo_gs.png"/></button>
-    <button class='button' id='bibleButton'>Bible</button>
-    <button class='button' id='lastDaysButton'>Last Days</button>
-    <button class='button' id='mapsButton'>Maps</button>
-    <button class='button' id='chaptersButton'>Chapters</button>
-    <button class='button' id='notesButton'>My Notes</button>
-    <button class='button' id='galleryButton'>Gallery</button>
-    <button class='button' id='shareButton'>Share</button>
-    <button class='button' id='settingsButton'>Settings</button>
-</nav>
-
-<article id="bibleText">
-
-    <h2 class="titleClass">Genesis</h2>
-    <p class="textToSentenceCase">
-        1 In the beginning God created the heaven and the earth. 2 And the earth was without form, and void; and
-        darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters. 3 And God
-        said,
-        Let there be light: and there was
-        light. 4 And God saw the light, that it was good: and God divided the light from the darkness. 5 And God
-        called
-        the light Day, and the darkness he called Night. And the evening and the morning were the first day. 6 And
-        God
-        said, Let there
-        be a firmament in the midst of the waters, and let it divide the waters from the waters. 7 And God made the
-        firmament, and divided the waters which were under the firmament from the waters which were above the
-        firmament:
-        and it was so. 8 And
-        God called the firmament Heaven. And the evening and the morning were the second day. 9 And God said, Let
-        the
-        waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so. 10
-        And
-        God called the dry
-        land Earth; and the gathering together of the waters called he Seas: and God saw that it was good. 11 And
-        God
-        said, Let the earth bring forth grass, the herb yielding seed, and the fruit tree yielding fruit after his
-        kind,
-        whose seed is in
-        itself, upon the earth: and it was so. 12 And the earth brought forth grass, and herb yielding seed after
-        his
-        kind, and the tree yielding fruit, whose seed was in itself, after his kind: and God saw that it was good.
-        13
-        And the evening and
-        the morning were the third day. 14 And God said, Let there be lights in the firmament of the heaven to
-        divide
-        the day from the night; and let them be for signs, and for seasons, and for days, and years: 15 And let them
-        be
-        for lights in the
-        firmament of the heaven to give light upon the earth: and it was so. 16 And God made two great lights; the
-        greater light to rule the day, and the lesser light to rule the night: he made the stars also. 17 And God
-        set
-        them in the firmament
-        of the heaven to give light upon the earth, 18 And to rule over the day and over the night, and to divide
-        the
-        light from the darkness: and God saw that it was good. 19 And the evening and the morning were the fourth
-        day.
-        20 And God said, Let
-        the waters bring forth abundantly the moving creature that hath life, and fowl that may fly above the earth
-        in
-        the open firmament of heaven. 21 And God created great whales, and every living creature that moveth, which
-        the
-        waters brought forth
-        abundantly, after their kind, and every winged fowl after his kind: and God saw that it was good. 22 And God
-        blessed them, saying, Be fruitful, and multiply, and fill the waters in the seas, and let fowl multiply in
-        the
-        earth. 23 And the evening
-        and the morning were the fifth day. 24 And God said, Let the earth bring forth the living creature after his
-        kind, cattle, and creeping thing, and beast of the earth after his kind: and it was so. 25 And God made the
-        beast of the earth after
-        his kind, and cattle after their kind, and every thing that creepeth upon the earth after his kind: and God
-        saw
-        that it was good. 26 And God said, Let us make man in our image, after our likeness: and let them have
-        dominion
-        over the fish of
-        the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping
-        thing that creepeth upon the earth. 27 So God created man in his own image, in the image of God created he
-        him;
-        male and female created
-        he them. 28 And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the
-        earth,
-        and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every
-        living
-        thing that moveth
-        upon the earth. 29 And God said, Behold, I have given you every herb bearing seed, which is upon the face of
-        all
-        the earth, and every tree, in the which is the fruit of a tree yielding seed; to you it shall be for meat.
-        30
-        And to every beast
-        of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, wherein there
-        is
-        life, I have given every green herb for meat: and it was so. 31 And God saw every thing that he had made,
-        and,
-        behold, it was very
-        good. And the evening and the morning were the sixth day.
-    </p>
-
-
-</article>
-<article id="timelineMenu"> <!-- Timeline of Jesus Last days -->
-    <h2 class="titleClass">Timeline of Jesus Last Days</h2>
-    <ul>
-        <li>
-            <button class="button timelineDayButton" id="day-7">Day -7</button>
-        </li>
-        <li>
-            <button class="button timelineDayButton" id="day-6">Day -6</button>
-        </li>
-        <li>
-            <button class="button timelineDayButton" id="day-5">Day -5</button>
-        </li>
-        <li>
-            <button class="button timelineDayButton" id="day-4">Day -4</button>
-        </li>
-        <li>
-            <button class="button timelineDayButton" id="day-3">Day -3</button>
-        </li>
-        <li>
-            <button class="button timelineDayButton" id="day-2">Day -2</button>
-        </li>
-        <li>
-            <button class="button timelineDayButton" id="day-1">Day -1</button>
-        </li>
-        <li>
-            <button class="button timelineDayXButton" id="dayX">Crucifixion</button>
-        </li>
-        <li>
-            <button class="button timelineDayAfterX" id="day1">Day 1</button>
-        </li>
-        <li>
-            <button class="button timelineDayAfterX" id="day2">Day 2</button>
-        </li>
-        <li>
-            <button class="button timelineDayResurrection" id="day3">Resurrection</button>
-        </li>
-        <li>
-            <button class="button timelineDayResurrection" id="day4">Ascension</button>
-        </li>
-    </ul>
-    <p class="textToSentenceCase">
-        1 In the beginning God created the heaven and the earth. 2 And the earth was without form, and void; and
-        darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters. 3 And God
-        said,
-        Let there be light: and there was
-        light. 4 And God saw the light, that it was good: and God divided the light from the darkness. 5 And God
-        called
-        the light Day, and the darkness he called Night. And the evening and the morning were the first day. 6 And
-        God
-        said, Let there
-        be a firmament in the midst of the waters, and let it divide the waters from the waters. 7 And God made the
-        firmament, and divided the waters which were under the firmament from the waters which were above the
-        firmament:
-        and it was so. 8 And
-        God called the firmament Heaven. And the evening and the morning were the second day. 9 And God said, Let
-        the
-        waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so. 10
-        And
-        God called the dry
-        land Earth; and the gathering together of the waters called he Seas: and God saw that it was good. 11 And
-        God
-        said, Let the earth bring forth grass, the herb yielding seed, and the fruit tree yielding fruit after his
-        kind,
-        whose seed is in
-        itself, upon the earth: and it was so. 12 And the earth brought forth grass, and herb yielding seed after
-        his
-        kind, and the tree yielding fruit, whose seed was in itself, after his kind: and God saw that it was good.
-        13
-        And the evening and
-        the morning were the third day. 14 And God said, Let there be lights in the firmament of the heaven to
-        divide
-        the day from the night; and let them be for signs, and for seasons, and for days, and years: 15 And let them
-        be
-        for lights in the
-        firmament of the heaven to give light upon the earth: and it was so. 16 And God made two great lights; the
-        greater light to rule the day, and the lesser light to rule the night: he made the stars also. 17 And God
-        set
-        them in the firmament
-        of the heaven to give light upon the earth, 18 And to rule over the day and over the night, and to divide
-        the
-        light from the darkness: and God saw that it was good. 19 And the evening and the morning were the fourth
-        day.
-        20 And God said, Let
-        the waters bring forth abundantly the moving creature that hath life, and fowl that may fly above the earth
-        in
-        the open firmament of heaven. 21 And God created great whales, and every living creature that moveth, which
-        the
-        waters brought forth
-        abundantly, after their kind, and every winged fowl after his kind: and God saw that it was good. 22 And God
-        blessed them, saying, Be fruitful, and multiply, and fill the waters in the seas, and let fowl multiply in
-        the
-        earth. 23 And the evening
-        and the morning were the fifth day. 24 And God said, Let the earth bring forth the living creature after his
-        kind, cattle, and creeping thing, and beast of the earth after his kind: and it was so. 25 And God made the
-        beast of the earth after
-        his kind, and cattle after their kind, and every thing that creepeth upon the earth after his kind: and God
-        saw
-        that it was good. 26 And God said, Let us make man in our image, after our likeness: and let them have
-        dominion
-        over the fish of
-        the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping
-        thing that creepeth upon the earth. 27 So God created man in his own image, in the image of God created he
-        him;
-        male and female created
-        he them. 28 And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the
-        earth,
-        and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every
-        living
-        thing that moveth
-        upon the earth. 29 And God said, Behold, I have given you every herb bearing seed, which is upon the face of
-        all
-        the earth, and every tree, in the which is the fruit of a tree yielding seed; to you it shall be for meat.
-        30
-        And to every beast
-        of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, wherein there
-        is
-        life, I have given every green herb for meat: and it was so. 31 And God saw every thing that he had made,
-        and,
-        behold, it was very
-        good. And the evening and the morning were the sixth day.
-    </p>
-</article>
-<article id="mapsGallery">
-    <h2 class="titleClass">Maps</h2>
-    <section id="mapItems">
-        <ul>
-            <li>
-                <button class="button" id="map1" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map2" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map3" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map4" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map5" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map6" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map7" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map8" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map9" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map10" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map11" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map12" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map13" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map14" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map15" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map16" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map17" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="map18" href="#"><img src="img/mapsThumb.png" alt=""/></button>
-            </li>
-        </ul>
-    </section>
-</article>
-<article id="chaptersID">
-    <h2 class="titleClass">Bible Chapters</h2>
-    <section id="chapterButtons">
-        <ul class="chapterButtonColumns">
-            <li>
-                <h4 class="toUpperCase chapterButtonSubtitle">Old Testament</h4>
-            </li>
-            <li>
-                <button class="button chapterButton" id="genesis" href="#">Genesis</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="exodus" href="#">Exodus</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="leviticus" href="#">Leviticus</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="numbers" href="#">Numbers</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="deuteronomy" href="#">Deuteronomy</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="joshua" href="#">Joshua</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="judges" href="#">Judges</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="ruth" href="#">Ruth</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="samuel1" href="#">1 Samuel</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="samuel2" href="#">2 Samuel</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="kings1" href="#">1 Kings</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="kings2" href="#">2 Kings</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="chronicles1" href="#">1 Chronicles</button>
-            </li>
-        </ul>
-        <ul class="chapterButtonColumns">
-            <li>
-                <button class="button chapterButton" id="chronicles2" href="#">2 Chronicles</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="ezra" href="#">Ezra</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="nehemiah" href="#">Nehemiah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="esther" href="#">Esther</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="job" href="#">Job</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="psalm" href="#">Psalm</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="proverbs" href="#">Proverbs</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="ecclesiastes" href="#">Ecclesiastes</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="songOfSolomon" href="#">Song of Solomon</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="isaiah" href="#">Isaiah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="jeremiah" href="#">Jeremiah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="lamentations" href="#">Lamentations</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="ezekiel" href="#">Ezekiel</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="daniel" href="#">Daniel</button>
-            </li>
-        </ul>
-        <ul class="chapterButtonColumns">
-            <li>
-                <button class="button chapterButton" id="hosea" href="#">Hosea</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="joel" href="#">Joel</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="amos" href="#">Amos</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="obadiah" href="#">Obadiah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="jonah" href="#">Jonah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="micah" href="#">Micah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="nahum" href="#">Nahum</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="habakkuk" href="#">Habakkuk</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="zephaniah" href="#">Zephaniah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="haggai" href="#">Haggai</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="zechariah" href="#">Zechariah</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="malachi" href="#">Malachi</button>
-            </li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul class="chapterButtonColumns">
-            <li>
-                <h4 class="toUpperCase chapterButtonSubtitle">New Testament</h4>
-            </li>
-            <li>
-                <button class="button chapterButton " id="matthew" href="#">Matthew</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="mark" href="#">Mark</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="luke" href="#">Luke</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="john" href="#">John</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="acts" href="#">Acts</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="romans" href="#">Romans</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="corinthians1" href="#">1 Corinthians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="corinthians2" href="#">2 Corinthians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="galatians" href="#">Galatians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="ephesians" href="#">Ephesians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="philippians" href="#">Philippians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="colossians" href="#">Colossians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="thessalonians1" href="#">1 Thessalonians</button>
-            </li>
-        </ul>
-        <ul class="chapterButtonColumns">
-            <li>
-                <button class="button chapterButton" id="thessalonians2" href="#">2 Thessalonians</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="timothy1" href="#">1 Timothy</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="timothy2" href="#">2 Timothy</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="titus" href="#">Titus</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="philemon" href="#">Philemon</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="hebrews" href="#">Hebrews</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="james" href="#">James</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="peter1" href="#">1 Peter</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="peter2" href="#">2 Peter</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="john1" href="#">1 John</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="john2" href="#">2 John</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="john3" href="#">3 John</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="jude" href="#">Jude</button>
-            </li>
-            <li>
-                <button class="button chapterButton" id="revelation" href="#">Revelation</button>
-            </li>
-        </ul>
-    </section>
-</article>
-<article id="myNotes">
-    <div id="myNotesHead">
-        <button class="button chapterButton" id="shareButtonMyNotes">Share</button>
-        <h2 id="myNotesTitle">My Notes</h2>
-        <date id="newDate"></date>
+<div class="app">
+    <h1>PhoneGap</h1>
+    <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
     </div>
-    <p class="textToSentenceCase">
-        Lorem ipsum dolor sit amet enim. Vitae non arcu taciti non vitae vestibulum odio class. Ornare nec
-        consectetuer.
-        Magna vel sed class condimentum pretium neque sit nec fames hendrerit eget vitae elit donec sem velit nulla.
-        Magna non pharetra. Neque facilisi at. Eos vitae arcu. Vel in nisl duis viverra eros. Massa laoreet molestie
-        mauris nam dictum. Ante est rhoncus. Amet fringilla nec. Ridiculus varius lacus. Consectetuer rutrum vel
-        metus
-        in montes integer et vivamus. Habitant odio et wisi suscipit doloribus arcu vestibulum at fusce erat vitae.
-        Massa vitae tempus.
 
-        Voluptatem neque condimentum id bibendum quam. Diam dolor wisi. Sed odio amet. Interdum auctor venenatis ac
-        hymenaeos gravida sem nonummy ligula imperdiet sem morbi. Ornare fuga eu amet habitasse sit eros aliquam
-        gravida. Mauris nunc nec. Purus justo posuere sem leo faucibus nisl augue incididunt. Feugiat ac augue. Eget
-        nam
-        diam. Eu ac vitae. Quis quis mauris. Mauris tristique per. Per a congue. Scelerisque sed sed. Eget ante in.
-        Wisi
-        mi scelerisque sit risus tellus vel sed integer dictumst enim urna porttitor diam ipsum. Sed libero tellus
-        lorem
-        sit interdum vitae elit mattis porttitor suspendisse suspendisse. Ultricies vitae nec semper non felis. Ut
-        vivamus nec metus turpis sit. Quis diam rutrum lorem est sed. Nam vestibulum et tempor faucibus sit lacus
-        est
-        elit auctor egestas nec. Lacus maiores erat id tincidunt pellentesque. Vitae placerat suscipit non vel
-        vehicula.
-        Mollis maecenas ultrices. Sollicitudin faucibus mauris enim pharetra placerat laoreet lectus sed.
+</div>
+    <div id="map"></div>
+    <!--<div id="wrapper">-->
+    <nav class='current'>
+        <!-- <h1>Jesus Last Days</h1> -->
+        <button class='button' id='logoButton'><img src="img/logo_gs.png"/></button>
+        <button class='button' id='bibleButton'>Bible</button>
+        <button class='button' id='lastDaysButton'>Last Days</button>
+        <button class='button' id='mapsButton'>Maps</button>
+        <button class='button' id='chaptersButton'>Chapters</button>
+        <button class='button' id='notesButton'>My Notes</button>
+        <button class='button' id='galleryButton'>Gallery</button>
+        <button class='button' id='shareButton'>Share</button>
+        <button class='button' id='settingsButton'>Settings</button>
+    </nav>
 
-        Egestas nulla sed vivamus magnis amet. Aliquet consequat posuere. Nisl ut placerat. Lectus maecenas sit
-        felis
-        dolor etiam. Sed egestas in. Vitae habitant praesent mi sed nulla quam vitae nulla sem duis erat. Egestas
-        orci a
-        enim tristique mi in sociis consequat. Eget erat luctus semper eleifend elit. Et vestibulum placerat
-        facilisi
-        donec in. Mus amet in deserunt pede id.
+    <article id="bibleText">
+        <div id="bibleTextHeader">
+            <button class="button" id="shareBibleTextButton">Share</button>
+            <h2>Genesis</h2>
+            <button class="button" id="bookMarkIconButton"><img src="img/bookMarkIcon.png" alt="BookMark"/></button>
+        </div>
+        <p class="textToSentenceCase">
+            1 In the beginning God created the heaven and the earth. 2 And the earth was without form, and void; and
+            darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters. 3 And God
+            said,
+            Let there be light: and there was
+            light. 4 And God saw the light, that it was good: and God divided the light from the darkness. 5 And God
+            called
+            the light Day, and the darkness he called Night. And the evening and the morning were the first day. 6 And
+            God
+            said, Let there
+            be a firmament in the midst of the waters, and let it divide the waters from the waters. 7 And God made the
+            firmament, and divided the waters which were under the firmament from the waters which were above the
+            firmament:
+            and it was so. 8 And
+            God called the firmament Heaven. And the evening and the morning were the second day. 9 And God said, Let
+            the
+            waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so. 10
+            And
+            God called the dry
+            land Earth; and the gathering together of the waters called he Seas: and God saw that it was good. 11 And
+            God
+            said, Let the earth bring forth grass, the herb yielding seed, and the fruit tree yielding fruit after his
+            kind,
+            whose seed is in
+            itself, upon the earth: and it was so. 12 And the earth brought forth grass, and herb yielding seed after
+            his
+            kind, and the tree yielding fruit, whose seed was in itself, after his kind: and God saw that it was good.
+            13
+            And the evening and
+            the morning were the third day. 14 And God said, Let there be lights in the firmament of the heaven to
+            divide
+            the day from the night; and let them be for signs, and for seasons, and for days, and years: 15 And let them
+            be
+            for lights in the
+            firmament of the heaven to give light upon the earth: and it was so. 16 And God made two great lights; the
+            greater light to rule the day, and the lesser light to rule the night: he made the stars also. 17 And God
+            set
+            them in the firmament
+            of the heaven to give light upon the earth, 18 And to rule over the day and over the night, and to divide
+            the
+            light from the darkness: and God saw that it was good. 19 And the evening and the morning were the fourth
+            day.
+            20 And God said, Let
+            the waters bring forth abundantly the moving creature that hath life, and fowl that may fly above the earth
+            in
+            the open firmament of heaven. 21 And God created great whales, and every living creature that moveth, which
+            the
+            waters brought forth
+            abundantly, after their kind, and every winged fowl after his kind: and God saw that it was good. 22 And God
+            blessed them, saying, Be fruitful, and multiply, and fill the waters in the seas, and let fowl multiply in
+            the
+            earth. 23 And the evening
+            and the morning were the fifth day. 24 And God said, Let the earth bring forth the living creature after his
+            kind, cattle, and creeping thing, and beast of the earth after his kind: and it was so. 25 And God made the
+            beast of the earth after
+            his kind, and cattle after their kind, and every thing that creepeth upon the earth after his kind: and God
+            saw
+            that it was good. 26 And God said, Let us make man in our image, after our likeness: and let them have
+            dominion
+            over the fish of
+            the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping
+            thing that creepeth upon the earth. 27 So God created man in his own image, in the image of God created he
+            him;
+            male and female created
+            he them. 28 And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the
+            earth,
+            and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every
+            living
+            thing that moveth
+            upon the earth. 29 And God said, Behold, I have given you every herb bearing seed, which is upon the face of
+            all
+            the earth, and every tree, in the which is the fruit of a tree yielding seed; to you it shall be for meat.
+            30
+            And to every beast
+            of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, wherein there
+            is
+            life, I have given every green herb for meat: and it was so. 31 And God saw every thing that he had made,
+            and,
+            behold, it was very
+            good. And the evening and the morning were the sixth day.
+        </p>
 
-        Euismod blandit maecenas. Ipsum lorem adipiscing venenatis mauris posuere. Habitant a sem sit dis elementum.
-        Quis amet vivamus praesent morbi posuere vulputate neque gravida etiam egestas donec. Pharetra etiam
-        ullamcorper
-        duis varius magna. Nascetur consectetuer erat vulputate ante magna consectetuer sem ornare. Risus neque et.
-        Duis
-        sit fusce. Gravida venenatis tortor. Sit faucibus aenean. Luctus faucibus egestas mattis luctus erat
-        pellentesque odio ornare sed nibh fermentum mi dolor cras maecenas massa tempus in etiam cras. Commodo
-        natoque
-        et. Facilisis justo nisl vel elementum maecenas. Ac vehicula faucibus aenean mauris non. Proin at quis.
-        Netus
-        pharetra varius. Vestibulum sed ante viverra.
-    </p>
 
-
-</article>
-<article id="imageGallery">
-    <h2 class="titleClass">Image Gallery</h2>
-    <section id="imageItems">
+    </article>
+    <article id="timelineMenu"> <!-- Timeline of Jesus Last days -->
+        <h2 class="titleClass">Timeline of Jesus Last Days</h2>
         <ul>
             <li>
-                <button class="button" id="image1" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-7">Day -7</button>
             </li>
             <li>
-                <button class="button" id="image2" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-6">Day -6</button>
             </li>
             <li>
-                <button class="button" id="image3" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-5">Day -5</button>
             </li>
             <li>
-                <button class="button" id="image4" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-4">Day -4</button>
             </li>
             <li>
-                <button class="button" id="image5" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-3">Day -3</button>
             </li>
             <li>
-                <button class="button" id="image6" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-2">Day -2</button>
             </li>
             <li>
-                <button class="button" id="image7" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayButton" id="day-1">Day -1</button>
             </li>
             <li>
-                <button class="button" id="image8" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayXButton" id="dayX">Crucifixion</button>
             </li>
             <li>
-                <button class="button" id="image9" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayAfterX" id="day1">Day 1</button>
             </li>
             <li>
-                <button class="button" id="image10" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayAfterX" id="day2">Day 2</button>
             </li>
             <li>
-                <button class="button" id="image11" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayResurrection" id="day3">Resurrection</button>
             </li>
             <li>
-                <button class="button" id="image12" href="#"><img src="img/imageThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="image13" href="#"><img src="img/imageThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="image14" href="#"><img src="img/imageThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="image15" href="#"><img src="img/imageThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="image16" href="#"><img src="img/imageThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="image17" href="#"><img src="img/imageThumb.png" alt=""/></button>
-            </li>
-            <li>
-                <button class="button" id="image18" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                <button class="button timelineDayResurrection" id="day4">Ascension</button>
             </li>
         </ul>
-    </section>
-</article>
-<footer class="footerImage"><img src="img/timelineWireframe.png" alt=""/></footer>
-<!--</div>-->
+        <p class="textToSentenceCase">
+            1 In the beginning God created the heaven and the earth. 2 And the earth was without form, and void; and
+            darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters. 3 And God
+            said,
+            Let there be light: and there was
+            light. 4 And God saw the light, that it was good: and God divided the light from the darkness. 5 And God
+            called
+            the light Day, and the darkness he called Night. And the evening and the morning were the first day. 6 And
+            God
+            said, Let there
+            be a firmament in the midst of the waters, and let it divide the waters from the waters. 7 And God made the
+            firmament, and divided the waters which were under the firmament from the waters which were above the
+            firmament:
+            and it was so. 8 And
+            God called the firmament Heaven. And the evening and the morning were the second day. 9 And God said, Let
+            the
+            waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so. 10
+            And
+            God called the dry
+            land Earth; and the gathering together of the waters called he Seas: and God saw that it was good. 11 And
+            God
+            said, Let the earth bring forth grass, the herb yielding seed, and the fruit tree yielding fruit after his
+            kind,
+            whose seed is in
+            itself, upon the earth: and it was so. 12 And the earth brought forth grass, and herb yielding seed after
+            his
+            kind, and the tree yielding fruit, whose seed was in itself, after his kind: and God saw that it was good.
+            13
+            And the evening and
+            the morning were the third day. 14 And God said, Let there be lights in the firmament of the heaven to
+            divide
+            the day from the night; and let them be for signs, and for seasons, and for days, and years: 15 And let them
+            be
+            for lights in the
+            firmament of the heaven to give light upon the earth: and it was so. 16 And God made two great lights; the
+            greater light to rule the day, and the lesser light to rule the night: he made the stars also. 17 And God
+            set
+            them in the firmament
+            of the heaven to give light upon the earth, 18 And to rule over the day and over the night, and to divide
+            the
+            light from the darkness: and God saw that it was good. 19 And the evening and the morning were the fourth
+            day.
+            20 And God said, Let
+            the waters bring forth abundantly the moving creature that hath life, and fowl that may fly above the earth
+            in
+            the open firmament of heaven. 21 And God created great whales, and every living creature that moveth, which
+            the
+            waters brought forth
+            abundantly, after their kind, and every winged fowl after his kind: and God saw that it was good. 22 And God
+            blessed them, saying, Be fruitful, and multiply, and fill the waters in the seas, and let fowl multiply in
+            the
+            earth. 23 And the evening
+            and the morning were the fifth day. 24 And God said, Let the earth bring forth the living creature after his
+            kind, cattle, and creeping thing, and beast of the earth after his kind: and it was so. 25 And God made the
+            beast of the earth after
+            his kind, and cattle after their kind, and every thing that creepeth upon the earth after his kind: and God
+            saw
+            that it was good. 26 And God said, Let us make man in our image, after our likeness: and let them have
+            dominion
+            over the fish of
+            the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping
+            thing that creepeth upon the earth. 27 So God created man in his own image, in the image of God created he
+            him;
+            male and female created
+            he them. 28 And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the
+            earth,
+            and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every
+            living
+            thing that moveth
+            upon the earth. 29 And God said, Behold, I have given you every herb bearing seed, which is upon the face of
+            all
+            the earth, and every tree, in the which is the fruit of a tree yielding seed; to you it shall be for meat.
+            30
+            And to every beast
+            of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, wherein there
+            is
+            life, I have given every green herb for meat: and it was so. 31 And God saw every thing that he had made,
+            and,
+            behold, it was very
+            good. And the evening and the morning were the sixth day.
+        </p>
+    </article>
+    <article id="mapsGallery">
+        <h2 class="titleClass">Maps</h2>
+        <section id="mapItems">
+            <ul>
+                <li>
+                    <button class="button" id="map1" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map2" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map3" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map4" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map5" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map6" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map7" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map8" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map9" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map10" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map11" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map12" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map13" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map14" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map15" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map16" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map17" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="map18" href="#"><img src="img/mapsThumb.png" alt=""/></button>
+                </li>
+            </ul>
+        </section>
+    </article>
+    <article id="chaptersID">
+        <h2 class="titleClass">Bible Chapters</h2>
+        <section id="chapterButtons">
+            <ul class="chapterButtonColumns">
+                <li>
+                    <h4 class="toUpperCase chapterButtonSubtitle">Old Testament</h4>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="genesis" href="#">Genesis</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="exodus" href="#">Exodus</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="leviticus" href="#">Leviticus</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="numbers" href="#">Numbers</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="deuteronomy" href="#">Deuteronomy</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="joshua" href="#">Joshua</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="judges" href="#">Judges</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="ruth" href="#">Ruth</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="samuel1" href="#">1 Samuel</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="samuel2" href="#">2 Samuel</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="kings1" href="#">1 Kings</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="kings2" href="#">2 Kings</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="chronicles1" href="#">1 Chronicles</button>
+                </li>
+            </ul>
+            <ul class="chapterButtonColumns">
+                <li>
+                    <button class="button chapterButton" id="chronicles2" href="#">2 Chronicles</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="ezra" href="#">Ezra</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="nehemiah" href="#">Nehemiah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="esther" href="#">Esther</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="job" href="#">Job</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="psalm" href="#">Psalm</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="proverbs" href="#">Proverbs</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="ecclesiastes" href="#">Ecclesiastes</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="songOfSolomon" href="#">Song of Solomon</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="isaiah" href="#">Isaiah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="jeremiah" href="#">Jeremiah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="lamentations" href="#">Lamentations</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="ezekiel" href="#">Ezekiel</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="daniel" href="#">Daniel</button>
+                </li>
+            </ul>
+            <ul class="chapterButtonColumns">
+                <li>
+                    <button class="button chapterButton" id="hosea" href="#">Hosea</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="joel" href="#">Joel</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="amos" href="#">Amos</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="obadiah" href="#">Obadiah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="jonah" href="#">Jonah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="micah" href="#">Micah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="nahum" href="#">Nahum</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="habakkuk" href="#">Habakkuk</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="zephaniah" href="#">Zephaniah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="haggai" href="#">Haggai</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="zechariah" href="#">Zechariah</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="malachi" href="#">Malachi</button>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="chapterButtonColumns">
+                <li>
+                    <h4 class="toUpperCase chapterButtonSubtitle">New Testament</h4>
+                </li>
+                <li>
+                    <button class="button chapterButton " id="matthew" href="#">Matthew</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="mark" href="#">Mark</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="luke" href="#">Luke</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="john" href="#">John</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="acts" href="#">Acts</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="romans" href="#">Romans</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="corinthians1" href="#">1 Corinthians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="corinthians2" href="#">2 Corinthians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="galatians" href="#">Galatians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="ephesians" href="#">Ephesians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="philippians" href="#">Philippians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="colossians" href="#">Colossians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="thessalonians1" href="#">1 Thessalonians</button>
+                </li>
+            </ul>
+            <ul class="chapterButtonColumns">
+                <li>
+                    <button class="button chapterButton" id="thessalonians2" href="#">2 Thessalonians</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="timothy1" href="#">1 Timothy</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="timothy2" href="#">2 Timothy</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="titus" href="#">Titus</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="philemon" href="#">Philemon</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="hebrews" href="#">Hebrews</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="james" href="#">James</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="peter1" href="#">1 Peter</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="peter2" href="#">2 Peter</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="john1" href="#">1 John</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="john2" href="#">2 John</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="john3" href="#">3 John</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="jude" href="#">Jude</button>
+                </li>
+                <li>
+                    <button class="button chapterButton" id="revelation" href="#">Revelation</button>
+                </li>
+            </ul>
+        </section>
+    </article>
+    <article id="myNotes">
+        <div id="myNotesHead">
+            <button class="button chapterButton" id="shareButtonMyNotes">Share</button>
+            <h2 id="myNotesTitle">My Notes</h2>
+            <date id="newDate"></date>
+        </div>
+        <p class="textToSentenceCase">
+            Lorem ipsum dolor sit amet enim. Vitae non arcu taciti non vitae vestibulum odio class. Ornare nec
+            consectetuer.
+            Magna vel sed class condimentum pretium neque sit nec fames hendrerit eget vitae elit donec sem velit nulla.
+            Magna non pharetra. Neque facilisi at. Eos vitae arcu. Vel in nisl duis viverra eros. Massa laoreet molestie
+            mauris nam dictum. Ante est rhoncus. Amet fringilla nec. Ridiculus varius lacus. Consectetuer rutrum vel
+            metus
+            in montes integer et vivamus. Habitant odio et wisi suscipit doloribus arcu vestibulum at fusce erat vitae.
+            Massa vitae tempus.
 
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/greensock/jquery.gsap.min.js"></script>
-<script src="js/greensock/TweenMax.min.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
-<script src="js/chui-3.9.2.js"></script>
+            Voluptatem neque condimentum id bibendum quam. Diam dolor wisi. Sed odio amet. Interdum auctor venenatis ac
+            hymenaeos gravida sem nonummy ligula imperdiet sem morbi. Ornare fuga eu amet habitasse sit eros aliquam
+            gravida. Mauris nunc nec. Purus justo posuere sem leo faucibus nisl augue incididunt. Feugiat ac augue. Eget
+            nam
+            diam. Eu ac vitae. Quis quis mauris. Mauris tristique per. Per a congue. Scelerisque sed sed. Eget ante in.
+            Wisi
+            mi scelerisque sit risus tellus vel sed integer dictumst enim urna porttitor diam ipsum. Sed libero tellus
+            lorem
+            sit interdum vitae elit mattis porttitor suspendisse suspendisse. Ultricies vitae nec semper non felis. Ut
+            vivamus nec metus turpis sit. Quis diam rutrum lorem est sed. Nam vestibulum et tempor faucibus sit lacus
+            est
+            elit auctor egestas nec. Lacus maiores erat id tincidunt pellentesque. Vitae placerat suscipit non vel
+            vehicula.
+            Mollis maecenas ultrices. Sollicitudin faucibus mauris enim pharetra placerat laoreet lectus sed.
 
-<script src="js/my-app.js"></script>
+            Egestas nulla sed vivamus magnis amet. Aliquet consequat posuere. Nisl ut placerat. Lectus maecenas sit
+            felis
+            dolor etiam. Sed egestas in. Vitae habitant praesent mi sed nulla quam vitae nulla sem duis erat. Egestas
+            orci a
+            enim tristique mi in sociis consequat. Eget erat luctus semper eleifend elit. Et vestibulum placerat
+            facilisi
+            donec in. Mus amet in deserunt pede id.
 
-<!--<script type="text/javascript">-->
-<!--//    app.initialize();-->
-<!--</script>-->
-<script>
-    var map = new GMaps({
-        el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
-    });
-</script>
+            Euismod blandit maecenas. Ipsum lorem adipiscing venenatis mauris posuere. Habitant a sem sit dis elementum.
+            Quis amet vivamus praesent morbi posuere vulputate neque gravida etiam egestas donec. Pharetra etiam
+            ullamcorper
+            duis varius magna. Nascetur consectetuer erat vulputate ante magna consectetuer sem ornare. Risus neque et.
+            Duis
+            sit fusce. Gravida venenatis tortor. Sit faucibus aenean. Luctus faucibus egestas mattis luctus erat
+            pellentesque odio ornare sed nibh fermentum mi dolor cras maecenas massa tempus in etiam cras. Commodo
+            natoque
+            et. Facilisis justo nisl vel elementum maecenas. Ac vehicula faucibus aenean mauris non. Proin at quis.
+            Netus
+            pharetra varius. Vestibulum sed ante viverra.
+        </p>
+
+
+    </article>
+    <article id="imageGallery">
+        <h2 class="titleClass">Image Gallery</h2>
+        <section id="imageItems">
+            <ul>
+                <li>
+                    <button class="button" id="image1" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image2" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image3" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image4" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image5" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image6" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image7" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image8" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image9" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image10" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image11" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image12" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image13" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image14" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image15" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image16" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image17" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+                <li>
+                    <button class="button" id="image18" href="#"><img src="img/imageThumb.png" alt=""/></button>
+                </li>
+            </ul>
+        </section>
+    </article>
+    <footer class="footerImage"><img src="img/timelineWireframe.png" alt=""/></footer>
+    <!--</div>-->
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/greensock/jquery.gsap.min.js"></script>
+    <script src="js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/chui-3.9.2.js"></script>
+
+    <script src="js/my-app.js"></script>
+
+    <!--<script type="text/javascript">-->
+    <!--//    app.initialize();-->
+    <!--</script>-->
+    <script>
+        var map = new GMaps({
+            el: '#map',
+            lat: 31.7690400,
+            lng: 35.2163300,
+            zoom: 8,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                position: google.maps.ControlPosition.RIGHT_CENTER
+            },
+            zoomControl: true,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.RIGHT_CENTER
+            }
+        });
+    </script>
 </body>
 
 </html>
