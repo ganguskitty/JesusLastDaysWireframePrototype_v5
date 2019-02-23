@@ -1,0 +1,17 @@
+#lastDaysContent.container-fluid .row .col-6 h2 {
+    z-index: 500;
+    position: relative;
+    float: right;
+    color: #000000;
+}
+
+#lastDaysCalendarButtonsContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#lastDaysCalendarButtonsContainer button {
+    width: 90%;
+    height: 3em;
+}
+

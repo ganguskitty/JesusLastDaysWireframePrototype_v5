@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6b45b11c-0265-456b-b876-4d8f87fbb10e" name="lastDays" url="http://lastdays:8888/">
+        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

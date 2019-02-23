@@ -1,0 +1,14 @@
+#homeContent.container-fluid .row h2 {
+    z-index: 500;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 1em;
+    color: #ffffff;
+}
+
+#timeLineHome {
+    width: auto;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+}
