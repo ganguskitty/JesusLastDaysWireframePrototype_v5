@@ -15,6 +15,11 @@ function displayCrucifixionDay() {
     $password = "root";
     $dbname = "lastdaysdb";
 
+//    $servername = "localhost";
+//    $username = "bobkitty_lastDay";
+//    $password = "Me]]HqV;QPktv(%h?B";
+//    $dbname = "bobkitty_lastDays";
+
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 //Check connection
