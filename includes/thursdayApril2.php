@@ -388,4 +388,232 @@ function displayThursdayApril2() {
 
         echo "There is no data to display.";
     }
+
+    $sql20 = "SELECT * from Verses WHERE OsisRef IN ('Luke.22.40', 'Luke.22.41', 'Luke.22.42', 'Luke.22.43', 'Luke.22.44', 'Luke.22.45', 'Luke.22.46')";
+
+    $result20 = mysqli_query($conn, $sql20);
+
+    if (mysqli_num_rows($result20) > 0) {
+
+        echo "<h5>Luke 22:40-46</h5>";
+        // output data of each row
+        while ($row20 = mysqli_fetch_assoc($result20)) {
+
+            echo "<p>";
+            echo $row20["VerseNum"] . ": " . $row20["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql21 = "SELECT * from Verses WHERE OsisRef IN ('Mark.14.32', 'Mark.14.33', 'Mark.14.34', 'Mark.14.35', 'Mark.14.36', 'Mark.14.37', 'Mark.14.38', 'Mark.14.39', 'Mark.14.40', 'Mark.14.41', 'Mark.14.42')";
+
+    $result21 = mysqli_query($conn, $sql21);
+
+    if (mysqli_num_rows($result21) > 0) {
+
+        echo "<h5>Mark 14:32-42</h5>";
+        // output data of each row
+        while ($row21 = mysqli_fetch_assoc($result21)) {
+
+            echo "<p>";
+            echo $row21["VerseNum"] . ": " . $row21["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql22 = "SELECT * from Verses WHERE OsisRef IN ('Matt.26.36', 'Matt.26.37', 'Matt.26.38', 'Matt.26.39', 'Matt.26.40', 'Matt.26.41', 'Matt.26.42', 'Matt.26.43', 'Matt.26.44', 'Matt.26.45', 'Matt.26.46')";
+
+    $result22 = mysqli_query($conn, $sql22);
+
+    if (mysqli_num_rows($result22) > 0) {
+
+        echo "<h5>Matthew 26:36-46</h5>";
+        // output data of each row
+        while ($row22 = mysqli_fetch_assoc($result22)) {
+
+            echo "<p>";
+            echo $row22["VerseNum"] . ": " . $row22["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql23 = "SELECT * from Verses WHERE OsisRef IN ('John.18.2', 'John.18.3', 'John.18.4', 'John.18.5', 'John.18.6', 'John.18.7', 'John.18.8', 'John.18.9', 'John.18.10', 'John.18.11')";
+
+    $result23 = mysqli_query($conn, $sql23);
+
+    if (mysqli_num_rows($result23) > 0) {
+
+        echo "<h5>John 18:2-11</h5>";
+        // output data of each row
+        while ($row23 = mysqli_fetch_assoc($result23)) {
+
+            echo "<p>";
+            echo $row23["VerseNum"] . ": " . $row23["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql24 = "SELECT * from Verses WHERE OsisRef IN ('Luke.22.47', 'Luke.22.48', 'Luke.22.49', 'Luke.22.50', 'Luke.22.51', 'Luke.22.52', 'Luke.22.53')";
+
+    $result24 = mysqli_query($conn, $sql24);
+
+    if (mysqli_num_rows($result24) > 0) {
+
+        echo "<h5>Luke 22:47-53</h5>";
+        // output data of each row
+        while ($row24 = mysqli_fetch_assoc($result24)) {
+
+            echo "<p>";
+            echo $row24["VerseNum"] . ": " . $row24["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql25 = "SELECT * from Verses WHERE OsisRef IN ('Mark.14.43', 'Mark.14.44', 'Mark.14.45', 'Mark.14.46', 'Mark.14.47', 'Mark.14.48', 'Mark.14.49', 'Mark.14.50', 'Mark.14.51', 'Mark.14.52')";
+
+    $result25 = mysqli_query($conn, $sql25);
+
+    if (mysqli_num_rows($result25) > 0) {
+
+        echo "<h5>Mark 14:43-52</h5>";
+        // output data of each row
+        while ($row25 = mysqli_fetch_assoc($result25)) {
+
+            echo "<p>";
+            echo $row25["VerseNum"] . ": " . $row25["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql26 = "SELECT * from Verses WHERE OsisRef IN ('Matt.26.47', 'Matt.26.48', 'Matt.26.49', 'Matt.26.50', 'Matt.26.51', 'Matt.26.52', 'Matt.26.53', 'Matt.26.54', 'Matt.26.55', 'Matt.26.56')";
+
+    $result26 = mysqli_query($conn, $sql26);
+
+    if (mysqli_num_rows($result26) > 0) {
+
+        echo "<h5>Matthew 26:47-56</h5>";
+        // output data of each row
+        while ($row26 = mysqli_fetch_assoc($result26)) {
+
+            echo "<p>";
+            echo $row26["VerseNum"] . ": " . $row26["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql27 = "SELECT * from Verses WHERE OsisRef IN ('John.18.12', 'John.18.13', 'John.18.14', 'John.18.15', 'John.18.16', 'John.18.17', 'John.18.18', 'John.18.19', 'John.18.20', 'John.18.21', 'John.18.22', 'John.18.23', 'John.18.24', 'John.18.25', 'John.18.26', 'John.18.27')";
+
+    $result27 = mysqli_query($conn, $sql27);
+
+    if (mysqli_num_rows($result27) > 0) {
+
+        echo "<h5>John 18:12-27</h5>";
+        // output data of each row
+        while ($row27 = mysqli_fetch_assoc($result27)) {
+
+            echo "<p>";
+            echo $row27["VerseNum"] . ": " . $row27["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql28 = "SELECT * from Verses WHERE OsisRef IN ('Luke.22.54', 'Luke.22.55', 'Luke.22.56', 'Luke.22.57', 'Luke.22.58', 'Luke.22.59', 'Luke.22.60', 'Luke.22.61', 'Luke.22.62', 'Luke.22.63', 'Luke.22.64', 'Luke.22.65')";
+
+    $result28 = mysqli_query($conn, $sql28);
+
+    if (mysqli_num_rows($result28) > 0) {
+
+        echo "<h5>Luke 22:54-65</h5>";
+        // output data of each row
+        while ($row28 = mysqli_fetch_assoc($result28)) {
+
+            echo "<p>";
+            echo $row28["VerseNum"] . ": " . $row28["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+
+    $sql29 = "SELECT * from Verses WHERE OsisRef IN ('Mark.14.53', 'Mark.14.54', 'Mark.14.55', 'Mark.14.56', 'Mark.14.57', 'Mark.14.58', 'Mark.14.59', 'Mark.14.60', 'Mark.14.61', 'Mark.14.62', 'Mark.14.63', 'Mark.14.64', 'Mark.14.65', 'Mark.14.66', 'Mark.14.67', 'Mark.14.68', 'Mark.14.69', 'Mark.14.70', 'Mark.14.71', 'Mark.14.72')";
+
+    $result29 = mysqli_query($conn, $sql29);
+
+    if (mysqli_num_rows($result29) > 0) {
+
+        echo "<h5>Mark 14:53-72</h5>";
+        // output data of each row
+        while ($row29 = mysqli_fetch_assoc($result29)) {
+
+            echo "<p>";
+            echo $row29["VerseNum"] . ": " . $row29["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+    
+    $sql30 = "SELECT * from Verses WHERE OsisRef IN ('Matt.26.57', 'Matt.26.58', 'Matt.26.59', 'Matt.26.60', 'Matt.26.61', 'Matt.26.62', 'Matt.26.63', 'Matt.26.64', 'Matt.26.65', 'Matt.26.66', 'Matt.26.67', 'Matt.26.68', 'Matt.26.69', 'Matt.26.70', 'Matt.26.71', 'Matt.26.72', 'Matt.26.73', 'Matt.26.74', 'Matt.26.75', 'Matt.26.76')";
+
+    $result30 = mysqli_query($conn, $sql30);
+
+    if (mysqli_num_rows($result30) > 0) {
+
+        echo "<h5>Matthew 26:57-75</h5>";
+        // output data of each row
+        while ($row30 = mysqli_fetch_assoc($result30)) {
+
+            echo "<p>";
+            echo $row30["VerseNum"] . ": " . $row30["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
+    
+    $sql31 = "SELECT * from Verses WHERE OsisRef IN ('Luke.22.66', 'Luke.22.67', 'Luke.22.68', 'Luke.22.69', 'Luke.22.70', 'Luke.22.71')";
+
+    $result31 = mysqli_query($conn, $sql31);
+
+    if (mysqli_num_rows($result31) > 0) {
+
+        echo "<h5>Luke 22:66-71</h5>";
+        // output data of each row
+        while ($row31 = mysqli_fetch_assoc($result31)) {
+
+            echo "<p>";
+            echo $row31["VerseNum"] . ": " . $row31["VerseText"];
+            echo "</p>";
+        }
+    } else {
+
+        echo "There is no data to display.";
+    }
 }

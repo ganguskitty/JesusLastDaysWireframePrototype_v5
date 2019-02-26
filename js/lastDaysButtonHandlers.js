@@ -49,4 +49,70 @@ $(document).ready(function () {
            }
         });
     });
+    
+    $("#cruxBtn").click(function() {
+        $.ajax({
+           url: "includes/crucifixionDay.php",
+           type: 'POST',
+           data: {method: 'displayCrucifixionDay'},
+           success: function(result) {
+               $("#dayText").html(result);
+           }
+        });
+    });
+    
+    $("#satApril4Btn").click(function() {
+        $.ajax({
+           url: "includes/saturdayApril4.php",
+           type: 'POST',
+           data: {method: 'displaySaturdayApril4'},
+           success: function(result) {
+               $("#dayText").html(result);
+           }
+        });
+    });
+    
+    $("#resurrectionBtn").click(function() {
+        $.ajax({
+           url: "includes/resurrectionDay.php",
+           type: 'POST',
+           data: {method: 'displayResurrectionDay'},
+           success: function(result) {
+               $("#dayText").html(result);
+           }
+        });
+    });
+    
+    $("#monApril6Btn").click(function() {
+        $.ajax({
+           url: "includes/mondayApril6.php",
+           type: 'POST',
+           data: {method: 'displayMondayApril6'},
+           success: function(result) {
+               $("#dayText").html(result);
+           }
+        });
+    });
+    
+    $("#sunApril12Btn").click(function() {
+        $.ajax({
+           url: "includes/sundayApril12.php",
+           type: 'POST',
+           data: {method: 'displaySundayApril12'},
+           success: function(result) {
+               $("#dayText").html(result);
+           }
+        });
+    });
+    
+    $("#ascensionBtn").click(function() {
+        $.ajax({
+           url: "includes/dayOfAscension.php",
+           type: 'POST',
+           data: {method: 'displayDayOfAscension'},
+           success: function(result) {
+               $("#dayText").html(result);
+           }
+        });
+    });
 });
