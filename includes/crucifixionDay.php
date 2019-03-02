@@ -23,8 +23,10 @@ function displayCrucifixionDay() {
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 //Check connection
-    if ($conn->connect_error)
+    if ($conn->connect_error) {
         die("Fatal Error");
+    }
+    
     if (mysqli_connect_errno()) {
         echo '<p>Error: Could not connect to database.<br/>
     Please try again later.</p>';
