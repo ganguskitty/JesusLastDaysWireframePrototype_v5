@@ -9,31 +9,9 @@
 echo $_POST["method"]();
 
 function oldTestamentBooksList() {
+    include_once 'login.php';
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "lastdaysdb";
-
-//    $servername = "localhost";
-//    $username = "bobkitty_lastDay";
-//    $password = "Me]]HqV;QPktv(%h?B";
-//    $dbname = "bobkitty_lastDays";
-
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-//Check connection
-    if ($conn->connect_error) {
-        die("Fatal Error");
-    }
-
-    if (mysqli_connect_errno()) {
-        echo '<p>Error: Could not connect to database.<br/>
-    Please try again later.</p>';
-        exit;
-    }
-
-    $sql = "SELECT * FROM books WHERE BookID BETWEEN 1 AND 39";
+    $sql = "SELECT * FROM Books WHERE BookID BETWEEN 1 AND 39";
 
     $result = mysqli_query($conn, $sql);
 
@@ -41,39 +19,23 @@ function oldTestamentBooksList() {
 
 // output data of each row
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<button id='" . $row["BookName"] . "Btn' type='button' class='list-group-item list-group-item-action'>" . $row["BookName"] . "</button>";
+
+            $bookID = $row["BookName"];
+
+            echo "<button id='" . $bookID . "' type='button' class='list-group-item list-group-item-action' onclick='showChapters(this.id" . ", " . $row["NumOfChapters"] . ")'" . ">" . $row["BookName"] . " " . "</button>";
+            
         }
     } else {
+
         echo "There is no data available.";
+        
     }
 }
 
 function newTestamentBooksList() {
+    include_once 'login.php';
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "lastdaysdb";
-
-//    $servername = "localhost";
-//    $username = "bobkitty_lastDay";
-//    $password = "Me]]HqV;QPktv(%h?B";
-//    $dbname = "bobkitty_lastDays";
-
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-//Check connection
-    if ($conn->connect_error) {
-        die("Fatal Error");
-    }
-
-    if (mysqli_connect_errno()) {
-        echo '<p>Error: Could not connect to database.<br/>
-    Please try again later.</p>';
-        exit;
-    }
-
-    $sql = "SELECT * FROM books WHERE BookID BETWEEN 40 AND 66";
+    $sql = "SELECT * FROM Books WHERE BookID BETWEEN 40 AND 66";
 
     $result = mysqli_query($conn, $sql);
 
@@ -81,9 +43,36 @@ function newTestamentBooksList() {
 
 // output data of each row
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<button id='" . $row["BookName"] . "Btn' type='button' class='list-group-item list-group-item-action'>" . $row["BookName"] . "</button>";
+
+            $bookID = $row["BookName"];
+
+            echo "<button id='" . $bookID . "' type='button' class='list-group-item list-group-item-action' onclick='showChapters(this.id" . ", " . $row["NumOfChapters"] . ")'" . ">" . $row["BookName"] . " " . "</button>";
+            
         }
     } else {
+        
         echo "There is no data available.";
+        
     }
+}
+
+function bookChapters($numChapters) {
+    include_once 'login.php';
+
+    $numOfChptrs = $numChapters;
+
+    echo '<script type="text/javascript">',
+    'showChapters();',
+    '</script>';
+
+//    $sql = "SELECT * FROM Books WHERE $bookName";
+//
+//    $result = mysqli_query($conn, $sql);
+//
+//    if (mysqli_num_rows($result) > 0) {
+//        // output data of each row
+//        echo "<p>" . $row[NumOfChapters] . "</p>";
+//    } else {
+//        echo "There is no data available.";
+//    }
 }

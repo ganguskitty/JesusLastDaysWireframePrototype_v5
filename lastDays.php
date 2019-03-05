@@ -87,16 +87,16 @@ exit;
                 <div class="col-6">
                     <h3>Timeline of Jesus Last Days</h3>
                     <div id="lastDaysCalendarButtonsContainer" class="col-4 float-left">
-                        <button id="sunMarch29Btn">Sunday, March 29</button>
-                        <button id="monMarch30Btn">Monday, March 30</button>
-                        <button id="tueMarch31Btn">Tuesday, March 31</button>
-                        <button id="thuApril2Btn">Thursday, April 2</button>
-                        <button id="cruxBtn">Crucifixion</button>
-                        <button id="satApril4Btn">Saturday, April 4</button>
-                        <button id="resurrectionBtn">Resurrection</button>
-                        <button id="monApril6Btn">Monday, April 6</button>
-                        <button id="sunApril12Btn">Sunday, April 12</button>
-                        <button id="ascensionBtn">Ascension</button>
+                        <button id="sunMarch29Btn" type="button" class="list-group-item list-group-item-action">Sunday, March 29</button>
+                        <button id="monMarch30Btn" type="button" class="list-group-item list-group-item-action">Monday, March 30</button>
+                        <button id="tueMarch31Btn" type="button" class="list-group-item list-group-item-action">Tuesday, March 31</button>
+                        <button id="thuApril2Btn" type="button" class="list-group-item list-group-item-action">Thursday, April 2</button>
+                        <button id="cruxBtn" type="button" class="list-group-item list-group-item-action">Crucifixion</button>
+                        <button id="satApril4Btn" type="button" class="list-group-item list-group-item-action">Saturday, April 4</button>
+                        <button id="resurrectionBtn" type="button" class="list-group-item list-group-item-action">Resurrection</button>
+                        <button id="monApril6Btn" type="button" class="list-group-item list-group-item-action">Monday, April 6</button>
+                        <button id="sunApril12Btn" type="button" class="list-group-item list-group-item-action">Sunday, April 12</button>
+                        <button id="ascensionBtn" type="button" class="list-group-item list-group-item-action">Ascension</button>
                     </div>
                     <div id="lastDaysText" class="col-8 float-right">
                         <!--<div id="dayTitle">Date will display here.</div>-->

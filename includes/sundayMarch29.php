@@ -12,29 +12,10 @@
 echo $_POST["method"]();
 
 function displaySundayMarch29() {
+    
+    include_once 'login.php';
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "lastdaysdb";
-
-//    $servername = "localhost";
-//    $username = "bobkitty_lastDay";
-//    $password = "Me]]HqV;QPktv(%h?B";
-//    $dbname = "bobkitty_lastDays";
-
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-//Check connection
-    if ($conn->connect_error)
-        die("Fatal Error");
-    if (mysqli_connect_errno()) {
-        echo '<p>Error: Could not connect to database.<br/>
-    Please try again later.</p>';
-        exit;
-    }
-
-    $sql = "SELECT * FROM Verses WHERE OsisRef IN ('Luke.9.51', 'Luke.9.52', 'Luke.9.53', 'Luke.9.54', 'Luke.9.55', 'Luke.9.56')"; // AND WHERE OsisRef IN ('John.11.47', 'John.11.48', 'John.11.49', 'John.11.50', 'John.11.51', 'John.11.52', 'John.11.53', 'John.11.54')";
+    $sql = "SELECT * FROM Verses WHERE OsisRef IN ('Luke.9.51', 'Luke.9.52', 'Luke.9.53', 'Luke.9.54', 'Luke.9.55', 'Luke.9.56')";
 
     $result = mysqli_query($conn, $sql);
 

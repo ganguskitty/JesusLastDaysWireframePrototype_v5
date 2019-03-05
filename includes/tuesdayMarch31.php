@@ -9,27 +9,8 @@
 echo $_POST["method"]();
 
 function displayTuesdayMarch31() {
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "lastdaysdb";
-
-//    $servername = "localhost";
-//    $username = "bobkitty_lastDay";
-//    $password = "Me]]HqV;QPktv(%h?B";
-//    $dbname = "bobkitty_lastDays";
-
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-//Check connection
-    if ($conn->connect_error)
-        die("Fatal Error");
-    if (mysqli_connect_errno()) {
-        echo '<p>Error: Could not connect to database.<br/>
-    Please try again later.</p>';
-        exit;
-    }
+    
+    include_once 'login.php';
 
     $sql = "SELECT * FROM Verses WHERE OsisRef IN ('Luke.20.1', 'Luke.20.2', 'Luke.20.3', 'Luke.20.4', 'Luke.20.5', 'Luke.20.6', 'Luke.20.7', 'Luke.20.8', 'Luke.20.9', 'Luke.20.10', 'Luke.20.11', 'Luke.20.12', 'Luke.20.13', 'Luke.20.14', 'Luke.20.15', 'Luke.20.16', 'Luke.20.17', 'Luke.20.18', 'Luke.20.19', 'Luke.20.20', 'Luke.20.21', 'Luke.20.22', 'Luke.20.23', 'Luke.20.24', 'Luke.20.25', 'Luke.20.26')";
 

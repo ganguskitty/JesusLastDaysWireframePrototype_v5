@@ -12,27 +12,8 @@
 echo $_POST["method"]();
 
 function displayMondayMarch30() {
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "lastdaysdb";
-
-//    $servername = "localhost";
-//    $username = "bobkitty_lastDay";
-//    $password = "Me]]HqV;QPktv(%h?B";
-//    $dbname = "bobkitty_lastDays";
-
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-//Check connection
-    if ($conn->connect_error)
-        die("Fatal Error");
-    if (mysqli_connect_errno()) {
-        echo '<p>Error: Could not connect to database.<br/>
-    Please try again later.</p>';
-        exit;
-    }
+    
+    include_once 'login.php';
 
     $sql = "SELECT * FROM Verses WHERE OsisRef IN ('Mark.11.12', 'Mark.11.13', 'Mark.11.14', 'Mark.11.15', 'Mark.11.16', 'Mark.11.17', 'Mark.11.18', 'Mark.11.19')";
 
