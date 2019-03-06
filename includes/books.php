@@ -18,17 +18,14 @@ function oldTestamentBooksList() {
     if (mysqli_num_rows($result) > 0) {
 
 // output data of each row
-        while ($row = mysqli_fetch_assoc($result)) {
-
+        while ($row = mysqli_fetch_assoc($result)) { //Displays book nav
             $bookID = $row["BookName"];
 
             echo "<button id='" . $bookID . "' type='button' class='list-group-item list-group-item-action' onclick='showChapters(this.id" . ", " . $row["NumOfChapters"] . ")'" . ">" . $row["BookName"] . " " . "</button>";
-            
         }
     } else {
 
         echo "There is no data available.";
-        
     }
 }
 
@@ -42,37 +39,23 @@ function newTestamentBooksList() {
     if (mysqli_num_rows($result) > 0) {
 
 // output data of each row
-        while ($row = mysqli_fetch_assoc($result)) {
-
+        while ($row = mysqli_fetch_assoc($result)) { //Displays book nav
             $bookID = $row["BookName"];
 
             echo "<button id='" . $bookID . "' type='button' class='list-group-item list-group-item-action' onclick='showChapters(this.id" . ", " . $row["NumOfChapters"] . ")'" . ">" . $row["BookName"] . " " . "</button>";
-            
         }
     } else {
-        
+
         echo "There is no data available.";
-        
     }
 }
 
-function bookChapters($numChapters) {
-    include_once 'login.php';
-
-    $numOfChptrs = $numChapters;
-
-    echo '<script type="text/javascript">',
-    'showChapters();',
-    '</script>';
-
-//    $sql = "SELECT * FROM Books WHERE $bookName";
+//function bookChapters() {
+//    include_once 'login.php';
 //
-//    $result = mysqli_query($conn, $sql);
+//    //$numOfChptrs = $numChapters;
 //
-//    if (mysqli_num_rows($result) > 0) {
-//        // output data of each row
-//        echo "<p>" . $row[NumOfChapters] . "</p>";
-//    } else {
-//        echo "There is no data available.";
-//    }
-}
+//    echo '<script type="text/javascript">',
+//    'showChapters();',
+//    '</script>';
+//}

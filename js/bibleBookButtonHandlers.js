@@ -6,7 +6,7 @@
 
 function loadBookTitles() {
 
-    $.ajax({
+    $.ajax({ //Pulls Old Testament data
         url: "includes/books.php",
         type: 'POST',
         data: {method: 'oldTestamentBooksList'},
@@ -15,7 +15,7 @@ function loadBookTitles() {
         }
     });
 
-    $.ajax({
+    $.ajax({ //Pulls New Testament data
         url: "includes/books.php",
         type: 'POST',
         data: {method: 'newTestamentBooksList'},
@@ -25,24 +25,21 @@ function loadBookTitles() {
     });
 }
 
-$(document).ready(function () {
+//$(document).ready(function () {
+//
+//    $.ajax({//Shows book menu
+//        url: 'includes/books.php',
+//        type: 'POST',
+//        data: {method: 'bookChapters'},
+//        success: function (result) {
+//            $("#bookChapterMenu").html(result);
+//        }
+//    });
+//});
 
-    $.ajax({//Shows book menu
-        url: 'includes/books.php',
-        type: 'POST',
-        data: {method: 'bookChapters'},
-        success: function (result) {
-            $("#bookChapterMenu").html(result);
-        }
-    });
-});
-
-function showChapters(bookID, num) {
+function showChapters(bookID, num) { //Called from the oldTestamentBooksList() and newTestamentBooksList() from the books.php
     var book = bookID;
     var numOfChapters = num;
-
-    //document.getElementById("bookNameForChapterMenu").innerHTML = "Chapter Name";
-    //$("#bookForChapterMenu").add("<h3>" + nameOfBook + "</h3>");
 
     $("#bookChapterMenu").empty();//Clear chapter menu before showing other chapters
 
@@ -55,8 +52,8 @@ function showChapters(bookID, num) {
 }
 
 //This function creates the book title for the chapter menu.
-function chapterNameHandler(id) {
-    var buttonID = id
+function chapterNameHandler(book) {
+    var buttonID = book
     //alert(buttonID);
     
     $("#bookNameForChapterMenu").html(buttonID);
