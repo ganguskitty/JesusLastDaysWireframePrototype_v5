@@ -15,3 +15,24 @@
     height: 3em;
 }
 
+#lastDaysContent {
+    width: 100vw !important;
+    height: calc(100vh - 116px) !important;
+    overflow-y: hidden;
+}
+
+#lastDaysText {
+    width: auto;
+    height: calc(100vh - 156px) !important;
+}
+
+#dayText {
+    width: auto;
+    height: calc(100vh - 156px) !important;
+    overflow-y: scroll;
+}
+
+div#lastDaysContent.container-fluid div.row, div#lastDaysContent.container-fluid div.row div.col-6 {
+    width: auto;
+    height: calc(100vh - 156px) !important
+}

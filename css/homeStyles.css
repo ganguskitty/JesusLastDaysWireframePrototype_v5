@@ -11,7 +11,7 @@
     color: #ffffff;
 }
 
-#timeLineHome, #timeLineBible {
+#timeLineHome, #timeLineLastDays, #timeLineBible {
     width: auto;
     height: 60px;
     background-color: #000000;

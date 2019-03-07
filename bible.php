@@ -37,7 +37,7 @@
 
     </head>
     <body onload="loadBookTitles()">
-        <div id="headerMain" class="row container-fluid bg-light">
+        <div id="headerMain" class="row container-fluid bg-light pl-0 pr-0 ml-0 mr-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 float-right">
                 <a class="navbar-brand" href="#">Last Days</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,9 +70,9 @@
         </div>
 
         <!--<div id="bibleContent" class="row container container-fluid">-->
-        <div id="bibleContent" class="container container-fluid">
+        <div id="bibleContent" class="container-fluid">
             <div class="row">
-                 <div class="col">
+                 <div class="col-6">
                     <div class="row">
                         <h3>Bible Books</h3>
                     </div>
@@ -103,8 +103,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div id='mapHome' style="width: 100%; height: calc(100vh - 100px);"></div>
+                <div class="col-6 pl-0 pr-0">
+                    <div id='mapHome' style="width: 100%; height: calc(100vh - 116px);"></div>
                 </div>
             </div>
         </div>

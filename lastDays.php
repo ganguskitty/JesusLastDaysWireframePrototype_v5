@@ -37,6 +37,7 @@ exit;
         <!-- General Styles -->
         <link rel="stylesheet" href="css/mainCSS.css"/>
         <link rel="stylesheet" href="css/mapStyles.css"/>
+        <link rel="stylesheet" href="css/homeStyles.css"/>
         <link rel="stylesheet" href="css/lastDaysStyles.css"/>
 
         <!-- MapBox -->
@@ -105,20 +106,17 @@ exit;
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 pl-0 pr-0">
                     <!-- MapBox -->
-                    <div id='mapLastDays' style="width: 50%; height: 600px;"></div>
+                    <div id='mapLastDays' style="width: 100%; height: calc(100vh - 116px);"></div>
                 </div>
-
-
             </div>
-            <div class="row">
-                <div id="timeLineHome" class="col-12">
+        </div>
+            <div class="row fixed-bottom">
+                <div id="timeLineLastDays" class="col-12">
                     <h4>TIMELINE</h4>
                 </div>
             </div>
-
-        </div>
 
         <!-- MapBox Start -->
         <script>
