@@ -50,12 +50,8 @@ function newTestamentBooksList() {
     }
 }
 
-//function bookChapters() {
-//    include_once 'login.php';
-//
-//    //$numOfChptrs = $numChapters;
-//
-//    echo '<script type="text/javascript">',
-//    'showChapters();',
-//    '</script>';
-//}
+function loadChapterText() {
+    $chapter = $_REQUEST['chapterNum'];
+    
+    //echo $chapter;
+}

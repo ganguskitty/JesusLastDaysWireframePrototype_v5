@@ -6,7 +6,7 @@
 
 function loadBookTitles() {
 
-    $.ajax({ //Pulls Old Testament data
+    $.ajax({//Pulls Old Testament data
         url: "includes/books.php",
         type: 'POST',
         data: {method: 'oldTestamentBooksList'},
@@ -15,7 +15,7 @@ function loadBookTitles() {
         }
     });
 
-    $.ajax({ //Pulls New Testament data
+    $.ajax({//Pulls New Testament data
         url: "includes/books.php",
         type: 'POST',
         data: {method: 'newTestamentBooksList'},
@@ -25,28 +25,19 @@ function loadBookTitles() {
     });
 }
 
-//$(document).ready(function () {
-//
-//    $.ajax({//Shows book menu
-//        url: 'includes/books.php',
-//        type: 'POST',
-//        data: {method: 'bookChapters'},
-//        success: function (result) {
-//            $("#bookChapterMenu").html(result);
-//        }
-//    });
-//});
-
-function showChapters(bookID, num) { //Called from the oldTestamentBooksList() and newTestamentBooksList() from the books.php
-    var book = bookID;
+function showChapters(bookName, num) { //Called from the oldTestamentBooksList() and newTestamentBooksList() from the books.php, 
+    //displays chapter menu for the book selected.
+    var book = bookName;
     var numOfChapters = num;
+    //var chapterNumber;
 
     $("#bookChapterMenu").empty();//Clear chapter menu before showing other chapters
 
     for (i = 1; i <= numOfChapters; i++) {
-        $("#bookChapterMenu").append("<button type='button' class='list-group-item list-group-item-action chapterBtns'>" + i + "</button>");//Shows chapter menu.
-    }
+        $("#bookChapterMenu").append("<button type='button' name='" + book + "' id='chapter" + i + "' class='list-group-item list-group-item-action chapterBtns' onclick='loadText(this.id, this.name)'>" + i + "</button>");//Shows chapter menu.
 
+    }
+    
     chapterNameHandler(book);
 
 }
@@ -55,6 +46,23 @@ function showChapters(bookID, num) { //Called from the oldTestamentBooksList() a
 function chapterNameHandler(book) {
     var buttonID = book
     //alert(buttonID);
-    
+
     $("#bookNameForChapterMenu").html(buttonID);
+}
+
+function loadText(buttonID, book) { //Capture click event from chapter button to display chapter content.
+    var buttonID = buttonID;
+    var bookName = book;
+    
+    alert(bookName + ", " + buttonID);
+    
+    $.ajax({//Pull chapter content
+        url: "includes/books.php",
+        type: 'POST',
+        data: {method: 'loadChapterText',
+        },
+        success: function (result) {
+            $("#newTestamentBooks").html(result);
+        }
+    });
 }
