@@ -20,7 +20,8 @@
 
 div#bookChapterMenu {
     display: block;
-    height: 100vh;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
 }
 
 #bibleContent {

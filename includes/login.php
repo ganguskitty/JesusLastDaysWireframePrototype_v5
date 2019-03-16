@@ -10,7 +10,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "root";
-    $dbname = "lastdays";
+    $dbname = "lastdaysdb";
 
 //$servername = "localhost";
 //$username = "bobkitty_lastDay";
