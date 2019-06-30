@@ -6,16 +6,25 @@
 /***** HOME PAGE MAP START *****/
 /*******************************/
 
-#mapHome {
+#mapHome, #mapLastDays, #mapJesusTravels, #mapGallery {
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
 }
 
-#mapLastDays {
+/*#mapLastDays {
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
+}*/
+
+div.mapboxgl-popup-content {
+    max-width: 300px;
+}
+
+.mapSubHead {
+    font-size: 1.25em;
+    font-weight: bold;
 }
 
 /*******************************/

@@ -3,18 +3,11 @@
     Author     : Rodolfo Godinez
 */
 
-#homeContent.container-fluid .row h2 {
+#travelsContent.container-fluid .row h2 {
     z-index: 500;
     margin-top: 100px;
     position: absolute;
     margin-left: 1em;
     color: #ffffff;
     text-shadow: 2px 2px 2px #7d7d7d;
-}
-
-#timeLineHome, #timeLineLastDays, #timeLineBible {
-    width: auto;
-    height: 60px;
-    background-color: #000000;
-    color: #ffffff;
 }

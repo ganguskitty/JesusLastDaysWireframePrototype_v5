@@ -1,0 +1,24 @@
+/* 
+    Created on : Mar 5, 2019, 11:21:45 AM
+    Author     : Rodolfo Godinez
+*/
+
+#oldTestamentBooks, #newTestamentBooks {
+    width: auto;
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.chapterBtns {
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding: 0px;
+    text-align: center;
+}
+
+#bookChapterMenu {
+    display: block;
+    height: 100vh;
+}

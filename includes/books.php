@@ -52,10 +52,6 @@ function newTestamentBooksList() { //Shows names of book that belong to the New 
     }
 }
 
-//$chapter = $_POST['buttonID'];
-//$bookName = $_POST['book'];
-//$bkID = $_POST["bookID"];
-
 function loadChapterText() {
 
     include_once 'login.php';
@@ -63,14 +59,6 @@ function loadChapterText() {
     $chapter = $_REQUEST['btnID'];
     $bookName = $_REQUEST['bookName'];
     $bkID = $_REQUEST['bkID'];
-
-//    $bookID = $bkID;
-//    $bkName = $bookName;
-//    $bookChapter = $chapter;
-//    $bookID = 1;
-//    $bkName = Genesis;
-//    $bookChapter = 1;
-    //echo $bookID;
 
     $sql = "SELECT * FROM Verses WHERE BookID = '$bkID' AND Chapter = '$chapter'";
 
@@ -85,13 +73,4 @@ function loadChapterText() {
     } else {
         echo "There is no data available";
     }
-
-    
-//    echo "<p>";
-//    echo $chapter;
-//    echo "<br>";
-//    echo $bookName;
-//    echo "<br>";
-//    echo $bkID;
-//    echo "</p>";
 }

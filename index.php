@@ -16,9 +16,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!--<link rel="stylesheet" href="css/bootstrap4/bootstrap.css"/>-->
-        <!--<link rel="stylesheet" href="css/bootstrap4/bootstrap-reboot.css"/>-->
+        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="css/bootstrap4/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap4/bootstrap-reboot.css"/>
 
         <title>Jesus Last Days - Home</title>
 
@@ -28,8 +28,8 @@
         <link rel="stylesheet" href="css/homeStyles.css" />
 
         <!-- MapBox -->
-        <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet'/>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet'/>
 
     </head>
     <body>
@@ -39,7 +39,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
@@ -82,12 +82,28 @@
             mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZ3VzY2F0IiwiYSI6ImNqazBoM29sOTA2c2wzd29nNzZqYnlla24ifQ.jzOzrlUH8Kx9vya3R-ZMqQ';
             var map = new mapboxgl.Map({
                 container: 'mapHome',
-                style: 'mapbox://styles/ganguscat/cjkd03ki99c7u2rpbt43iommv',
-                center: [35.217018, 31.771959],
-                zoom: 9
+                style: 'mapbox://styles/ganguscat/cjvym4qpj0htf1cplo95i79mx',
+                center: [35.23, 31.77],
+                zoom: 12
             });
-            
-//            map.addControl(new mapboxgl.FullscreenControl()); //Adds full screen button for user control
+
+            map.on('click', function(e) {
+                var features = map.queryRenderedFeatures(e.point, {
+                    layers: ['placemarks-rev3'] //Replace this with the name of the layer
+                });
+                
+                if (!features.length) {
+                    return;
+                }
+                
+                var feature = features[0];
+                
+                var popup = new mapboxgl.Popup({ offset: [0, -15] })
+                        .setLngLat(feature.geometry.coordinates)
+                        .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
+                        .setLngLat(feature.geometry.coordinates)
+                        .addTo(map);
+            });
         </script>
         <!-- MapBox End -->
 

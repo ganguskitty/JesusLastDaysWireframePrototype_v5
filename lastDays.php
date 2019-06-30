@@ -41,13 +41,11 @@ exit;
         <link rel="stylesheet" href="css/lastDaysStyles.css"/>
 
         <!-- MapBox -->
-        <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet'/>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet'/>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
 
     </head>
     <body>
@@ -123,9 +121,27 @@ exit;
             mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZ3VzY2F0IiwiYSI6ImNqazBoM29sOTA2c2wzd29nNzZqYnlla24ifQ.jzOzrlUH8Kx9vya3R-ZMqQ';
             var map = new mapboxgl.Map({
                 container: 'mapLastDays',
-                style: 'mapbox://styles/ganguscat/cjkd03ki99c7u2rpbt43iommv',
-                center: [35.217018, 31.771959],
-                zoom: 9
+                style: 'mapbox://styles/ganguscat/cjvym4qpj0htf1cplo95i79mx',
+                center: [35.23, 31.77],
+                zoom: 12
+            });
+
+            map.on('click', function(e) {
+                var features = map.queryRenderedFeatures(e.point, {
+                    layers: ['placemarks-rev3'] //Replace this with the name of the layer
+                });
+                
+                if (!features.length) {
+                    return;
+                }
+                
+                var feature = features[0];
+                
+                var popup = new mapboxgl.Popup({ offset: [0, -15] })
+                        .setLngLat(feature.geometry.coordinates)
+                        .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
+                        .setLngLat(feature.geometry.coordinates)
+                        .addTo(map);
             });
         </script>
         <!-- MapBox End -->
