@@ -13,11 +13,14 @@
 #lastDaysCalendarButtonsContainer button {
     width: 90%;
     height: 3em;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #000000;
 }
 
 #lastDaysContent {
     width: 100vw !important;
-    height: calc(100vh - 116px) !important;
+    /*height: calc(100vh - 116px) !important;*/
     overflow-y: hidden;
 }
 
@@ -26,13 +29,14 @@
     height: calc(100vh - 156px) !important;
 }
 
-#dayText {
+#dayText, #sunMarch29BtnResult, #monMarch30BtnResult, #tueMarch31BtnResult {
     width: auto;
-    height: calc(100vh - 156px) !important;
+    height: calc(100vh - 300px) !important;
     overflow-y: scroll;
 }
 
 div#lastDaysContent.container-fluid div.row, div#lastDaysContent.container-fluid div.row div.col-6 {
     width: auto;
-    height: calc(100vh - 156px) !important
+    /*height: calc(100vh - 156px) !important;*/
+    overflow: scroll;
 }

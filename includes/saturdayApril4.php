@@ -18,7 +18,7 @@ function displaySaturdayApril4() {
 
     if (mysqli_num_rows($result) > 0) {
 
-        echo "<h3>Saturday, April 4</h3>";
+        //echo "<h3>Saturday, April 4</h3>";
         echo "<h5>John 19:38-42</h5>";
 // output data of each row
         while ($row = mysqli_fetch_assoc($result)) {

@@ -12,11 +12,12 @@ include 'includes/login.php';
 //$conn = new mysqli($servername, $username, $password, $dbname);
 //@$db = new mysqli($servername, $username, $password, $dbname);
 //Check connection
-if ($conn->connect_error) die("Fatal Error");
+if ($conn->connect_error)
+    die("Fatal Error");
 if (mysqli_connect_errno()) {
-echo '<p>Error: Could not connect to database.<br/>
+    echo '<p>Error: Could not connect to database.<br/>
     Please try again later.</p>';
-exit;
+    exit;
 }
 ?>
 
@@ -28,7 +29,7 @@ exit;
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
         <link rel="stylesheet" href="css/bootstrap4/bootstrap.css"/>
         <link rel="stylesheet" href="css/bootstrap4/bootstrap-reboot.css"/>
 
@@ -51,11 +52,11 @@ exit;
     <body>
         <div id="headerMain" class="container-fluid bg-light">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Last Days</a>
+                <a class="navbar-brand" href="#">Last Days of Jesus Christ</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -83,78 +84,112 @@ exit;
 
         <div id="lastDaysContent" class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col">
                     <h3>Timeline of Jesus Last Days</h3>
-                    <div id="lastDaysCalendarButtonsContainer" class="col-4 float-left">
-                        <button id="sunMarch29Btn" type="button" class="list-group-item list-group-item-action">Sunday, March 29</button>
-                        <button id="monMarch30Btn" type="button" class="list-group-item list-group-item-action">Monday, March 30</button>
-                        <button id="tueMarch31Btn" type="button" class="list-group-item list-group-item-action">Tuesday, March 31</button>
-                        <button id="thuApril2Btn" type="button" class="list-group-item list-group-item-action">Thursday, April 2</button>
-                        <button id="cruxBtn" type="button" class="list-group-item list-group-item-action">Crucifixion</button>
-                        <button id="satApril4Btn" type="button" class="list-group-item list-group-item-action">Saturday, April 4</button>
-                        <button id="resurrectionBtn" type="button" class="list-group-item list-group-item-action">Resurrection</button>
-                        <button id="monApril6Btn" type="button" class="list-group-item list-group-item-action">Monday, April 6</button>
-                        <button id="sunApril12Btn" type="button" class="list-group-item list-group-item-action">Sunday, April 12</button>
-                        <button id="ascensionBtn" type="button" class="list-group-item list-group-item-action">Ascension</button>
-                    </div>
-                    <div id="lastDaysText" class="col-8 float-right">
-                        <!--<div id="dayTitle">Date will display here.</div>-->
-                        <div id="dayText">
-                            
+                    <div id="lastDaysCalendarButtonsContainer" class="accordion">
+                        <div class="card">
+                            <div class="cardheader">
+                                <h2 class="mb-0">
+                                    <button id="sunMarch29Btn" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Sunday, March 29</button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#lastDaysCalendarButtonsContainer">
+                                <div id="sunMarch29BtnResult" class="card-body"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="cardheader">
+                                <h2 class="mb-0">
+                                    <button id="monMarch30Btn" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Monday, March 30</button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse hide" aria-labelledby="headingOne" data-parent="#lastDaysCalendarButtonsContainer">
+                                <div id="monMarch30BtnResult" class="card-body"></div>
+                            </div>
+
+                            <div class="card">
+                                <div class="cardheader">
+                                    <h2 class="mb-0">
+                                        <button id="tueMarch31Btn" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Tuesday, March 31</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse hide" aria-labelledby="headingOne" data-parent="#lastDaysCalendarButtonsContainer">
+                                    <div id="tueMarch31BtnResult" class="card-body"></div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="cardheader">
+                                        <h2 class="mb-0">
+                                            <button id="thuApril2Btn" type="button" class="list-group-item list-group-item-action">Thursday, April 2</button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse hide" aria-labelledby="headingOne" data-parent="#lastDaysCalendarButtonsContainer">
+                                        <div id="tueMarch31BtnResult" class="card-body"></div>
+                                    </div>
+ 
+                                    <button id="cruxBtn" type="button" class="list-group-item list-group-item-action">Crucifixion</button>
+                                    <button id="satApril4Btn" type="button" class="list-group-item list-group-item-action">Saturday, April 4</button>
+                                    <button id="resurrectionBtn" type="button" class="list-group-item list-group-item-action">Resurrection</button>
+                                    <button id="monApril6Btn" type="button" class="list-group-item list-group-item-action">Monday, April 6</button>
+                                    <button id="sunApril12Btn" type="button" class="list-group-item list-group-item-action">Sunday, April 12</button>
+                                    <button id="ascensionBtn" type="button" class="list-group-item list-group-item-action">Ascension</button>
+                                </div>
+                                <!--                    <div id="lastDaysText" class="col-8 float-right">
+                                                        <div id="dayTitle">Date will display here.</div>
+                                                        <div id="dayText">
+                                
+                                                        </div>
+                                                    </div>-->
+                            </div>
+                            <!--                <div class="col-6 pl-0 pr-0">
+                                                 MapBox 
+                                                <div id='mapLastDays' style="width: 100%; height: calc(100vh - 116px);"></div>
+                                            </div>-->
                         </div>
                     </div>
-                </div>
-                <div class="col-6 pl-0 pr-0">
-                    <!-- MapBox -->
-                    <div id='mapLastDays' style="width: 100%; height: calc(100vh - 116px);"></div>
-                </div>
-            </div>
-        </div>
-            <div class="row fixed-bottom">
-                <div id="timeLineLastDays" class="col-12">
-                    <h4>TIMELINE</h4>
-                </div>
-            </div>
+                    <!--        <div class="row fixed-bottom">
+                                <div id="timeLineLastDays" class="col-12">
+                                    <h4>TIMELINE</h4>
+                                </div>
+                            </div>-->
 
-        <!-- MapBox Start -->
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZ3VzY2F0IiwiYSI6ImNqazBoM29sOTA2c2wzd29nNzZqYnlla24ifQ.jzOzrlUH8Kx9vya3R-ZMqQ';
-            var map = new mapboxgl.Map({
-                container: 'mapLastDays',
-                style: 'mapbox://styles/ganguscat/cjvym4qpj0htf1cplo95i79mx',
-                center: [35.23, 31.77],
-                zoom: 12
-            });
+                    <!-- MapBox Start -->
+                    <script>
+                        mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZ3VzY2F0IiwiYSI6ImNqazBoM29sOTA2c2wzd29nNzZqYnlla24ifQ.jzOzrlUH8Kx9vya3R-ZMqQ';
+                        var map = new mapboxgl.Map({
+                            container: 'mapLastDays',
+                            style: 'mapbox://styles/ganguscat/cjvym4qpj0htf1cplo95i79mx',
+                            center: [35.23, 31.77],
+                            zoom: 12
+                        });
 
-            map.on('click', function(e) {
-                var features = map.queryRenderedFeatures(e.point, {
-                    layers: ['placemarks-rev3'] //Replace this with the name of the layer
-                });
-                
-                if (!features.length) {
-                    return;
-                }
-                
-                var feature = features[0];
-                
-                var popup = new mapboxgl.Popup({ offset: [0, -15] })
-                        .setLngLat(feature.geometry.coordinates)
-                        .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
-                        .setLngLat(feature.geometry.coordinates)
-                        .addTo(map);
-            });
-        </script>
-        <!-- MapBox End -->
+                        map.on('click', function (e) {
+                            var features = map.queryRenderedFeatures(e.point, {
+                                layers: ['placemarks-rev3'] //Replace this with the name of the layer
+                            });
 
-        <!-- Optional JavaScript -->
+                            if (!features.length) {
+                                return;
+                            }
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-        
-        <script src="js/lastDaysButtonHandlers.js"></script>
-    </body>
-</html>
+                            var feature = features[0];
+
+                            var popup = new mapboxgl.Popup({offset: [0, -15]})
+                                    .setLngLat(feature.geometry.coordinates)
+                                    .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
+                                    .setLngLat(feature.geometry.coordinates)
+                                    .addTo(map);
+                        });
+                    </script>
+                    <!-- MapBox End -->
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+                    <script src="js/lastDaysButtonHandlers.js"></script>
+                    </body>
+                    </html>

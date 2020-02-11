@@ -18,7 +18,7 @@ function displayThursdayApril2() {
 
     if (mysqli_num_rows($result) > 0) {
 
-        echo "<h3>Thursday, April 2</h3>";
+        //echo "<h3>Thursday, April 2</h3>";
         echo "<h5>First Day of Unleavened Bread</h5>";
         echo "<h5>Mark 14:12-16</h5>";
 // output data of each row

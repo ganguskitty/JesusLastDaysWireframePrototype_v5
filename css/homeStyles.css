@@ -3,18 +3,29 @@
     Author     : Rodolfo Godinez
 */
 
-#homeContent.container-fluid .row h2 {
-    z-index: 500;
-    margin-top: 100px;
-    position: absolute;
-    margin-left: 1em;
-    color: #ffffff;
-    text-shadow: 2px 2px 2px #7d7d7d;
+.homeCard {
+    background-color: rgba(66,33,99,0.1) !important;
+    color: #663399 !important;
 }
 
-#timeLineHome, #timeLineLastDays, #timeLineBible {
-    width: auto;
-    height: 60px;
-    background-color: #000000;
-    color: #ffffff;
+.homeCard:hover {
+    background-color: #663399 !important;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+#hero {
+    max-height: 600px;
+    margin-top: 56px;
+    margin-bottom: 20px;
+}
+
+.noListStyle:hover, .noListStyle:active {
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .homeCardSmall {/*Width adjustment for small screens*/
+        width: 12rem !important;
+    }
 }

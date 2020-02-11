@@ -18,7 +18,7 @@ function displayTuesdayMarch31() {
 
     if (mysqli_num_rows($result) > 0) {
 
-        echo "<h3>Tuesday, March 31</h3>";
+        //echo "<h3>Tuesday, March 31</h3>";
         echo "<h5>Luke 20:1-26</h5>";
 // output data of each row
         while ($row = mysqli_fetch_assoc($result)) {

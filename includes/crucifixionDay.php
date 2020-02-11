@@ -18,7 +18,7 @@ function displayCrucifixionDay() {
 
     if (mysqli_num_rows($result) > 0) {
 
-        echo "<h3>Friday, April 3</h3>";
+        //echo "<h3>Friday, April 3</h3>";
         echo "<h5>Day of Crucifixion</h5>";
         echo "<h5>John 19:1-40</h5>";
 // output data of each row

@@ -12,7 +12,7 @@ $(document).ready(function () {
             type: 'POST',
             data: {method: 'displaySundayMarch29'},
             success: function (result) {
-                $("#dayText").html(result);
+                $("#sunMarch29BtnResult").html(result);
             }
         });
     });
@@ -23,7 +23,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayMondayMarch30'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#monMarch30BtnResult").html(result);
            }
         });
     });
@@ -34,7 +34,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayTuesdayMarch31'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#tueMarch31BtnResult").html(result);
            }
         });
     });
@@ -45,7 +45,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayThursdayApril2'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#thuApril2BtnResult").html(result);
            }
         });
     });
@@ -67,7 +67,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displaySaturdayApril4'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#cruxBtnResult").html(result);
            }
         });
     });
@@ -78,7 +78,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayResurrectionDay'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#resurrectionBtnResult").html(result);
            }
         });
     });
@@ -89,7 +89,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayMondayApril6'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#monApril6BtnResult").html(result);
            }
         });
     });
@@ -100,7 +100,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displaySundayApril12'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#sunApril12BtnResult").html(result);
            }
         });
     });
@@ -111,7 +111,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayDayOfAscension'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#ascensionBtnResult").html(result);
            }
         });
     });

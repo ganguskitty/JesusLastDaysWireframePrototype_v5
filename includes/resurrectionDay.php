@@ -18,7 +18,7 @@ function displayResurrectionDay() {
 
     if (mysqli_num_rows($result) > 0) {
 
-        echo "<h3>Sunday, April 5</h3>";
+        //echo "<h3>Sunday, April 5</h3>";
         echo "<h5>Day of Resurrection</h5>";
         echo "<h5>John 20:1-18</h5>";
 // output data of each row

@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
         <link rel="stylesheet" href="css/bootstrap4/bootstrap.css"/>
         <link rel="stylesheet" href="css/bootstrap4/bootstrap-reboot.css"/>
 
@@ -72,7 +72,7 @@
         <!--<div id="bibleContent" class="row container container-fluid">-->
         <div id="bibleContent" class="container-fluid">
             <div class="row">
-                 <div class="col-6">
+                <div class="col-6">
                     <div class="row">
                         <h3>Bible Books</h3>
                     </div>
@@ -117,46 +117,40 @@
     <!--</div>-->
 
     <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZ3VzY2F0IiwiYSI6ImNqazBoM29sOTA2c2wzd29nNzZqYnlla24ifQ.jzOzrlUH8Kx9vya3R-ZMqQ';
-            var map = new mapboxgl.Map({
-                container: 'mapHome',
-                style: 'mapbox://styles/ganguscat/cjvym4qpj0htf1cplo95i79mx',
-                center: [35.23, 31.77],
-                zoom: 12
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZ3VzY2F0IiwiYSI6ImNqazBoM29sOTA2c2wzd29nNzZqYnlla24ifQ.jzOzrlUH8Kx9vya3R-ZMqQ';
+        var map = new mapboxgl.Map({
+            container: 'mapHome',
+            style: 'mapbox://styles/ganguscat/cjvym4qpj0htf1cplo95i79mx',
+            center: [35.23, 31.77],
+            zoom: 12
+        });
+
+        map.on('click', function (e) {
+            var features = map.queryRenderedFeatures(e.point, {
+                layers: ['placemarks-rev3'] //Replace this with the name of the layer
             });
 
-            map.on('click', function(e) {
-                var features = map.queryRenderedFeatures(e.point, {
-                    layers: ['placemarks-rev3'] //Replace this with the name of the layer
-                });
-                
-                if (!features.length) {
-                    return;
-                }
-                
-                var feature = features[0];
-                
-                var popup = new mapboxgl.Popup({ offset: [0, -15] })
-                        .setLngLat(feature.geometry.coordinates)
-                        .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
-                        .setLngLat(feature.geometry.coordinates)
-                        .addTo(map);
-            });
-        </script>
+            if (!features.length) {
+                return;
+            }
+
+            var feature = features[0];
+
+            var popup = new mapboxgl.Popup({offset: [0, -15]})
+                    .setLngLat(feature.geometry.coordinates)
+                    .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
+                    .setLngLat(feature.geometry.coordinates)
+                    .addTo(map);
+        });
+    </script>
 
 
     <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 
     <script src="js/bibleBookButtonHandlers.js"></script>
 </body>

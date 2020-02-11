@@ -5,35 +5,34 @@
  * Date: 8/2/18
  * Time: 3:15 PM
  */
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="css/bootstrap4/bootstrap.css" />
-    <link rel="stylesheet" href="css/bootstrap4/bootstrap-reboot.css" />
+        <!-- Bootstrap CSS -->
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="css/bootstrap4/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap4/bootstrap-reboot.css"/>
 
-    <title>Jesus Last Days - Gallery</title>
+        <title>Jesus Last Days - Gallery</title>
 
-    <!-- General Styles -->
-    <link rel="stylesheet" href="css/mainCSS.css" />
-    <link rel="stylesheet" href="css/mapStyles.css" />
-    <link rel="stylesheet" href="css/gallery.css" />
+        <!-- General Styles -->
+        <link rel="stylesheet" href="css/mainCSS.css" />
+        <link rel="stylesheet" href="css/mapStyles.css" />
+        <link rel="stylesheet" href="css/gallery.css" />
 
-    <!-- MapBox -->
+        <!-- MapBox -->
         <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet'/>
 
-</head>
-<body>
-<div id="headerMain" class="container-fluid bg-light">
+    </head>
+    <body>
+        <div id="headerMain" class="container-fluid bg-light">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Last Days</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,18 +86,18 @@
                 zoom: 12
             });
 
-            map.on('click', function(e) {
+            map.on('click', function (e) {
                 var features = map.queryRenderedFeatures(e.point, {
                     layers: ['placemarks-rev3'] //Replace this with the name of the layer
                 });
-                
+
                 if (!features.length) {
                     return;
                 }
-                
+
                 var feature = features[0];
-                
-                var popup = new mapboxgl.Popup({ offset: [0, -15] })
+
+                var popup = new mapboxgl.Popup({offset: [0, -15]})
                         .setLngLat(feature.geometry.coordinates)
                         .setHTML('<h4>' + feature.properties.Label + '</h4><span class=\"mapSubHead\">' + feature.properties.VerseName + '</span>' + '<br><p>' + feature.properties.VerseText + '</p>')
                         .setLngLat(feature.geometry.coordinates)
@@ -108,10 +107,10 @@
         <!-- MapBox End -->
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>
