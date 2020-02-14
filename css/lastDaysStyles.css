@@ -6,16 +6,57 @@
 }
 
 #lastDaysCalendarButtonsContainer {
+    max-width: 260px;
     padding-left: 0px;
     padding-right: 0px;
 }
 
-#lastDaysCalendarButtonsContainer button {
+/*#lastDaysCalendarButtonsContainer button {
     width: 90%;
-    height: 3em;
-    font-size: 1.75rem;
+    height: 2.5em;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #000000;
+    text-align: left;
+    text-decoration: none;
+}*/
+
+.card .cardheader button {
+    width: 100%;
+    height: 2.5em;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0rem;
+}
+
+.modal-footer button {
+    width: 100%;
+    height: 73px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.125);*/
+    border-radius: 0rem;
+}
+
+.modal-footer button:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.modal-footer button:active {
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+.modal-footer {
+    height: 73px;
+    padding: 0px !important;
 }
 
 #lastDaysContent {
@@ -29,7 +70,9 @@
     height: calc(100vh - 156px) !important;
 }
 
-#dayText, #sunMarch29BtnResult, #monMarch30BtnResult, #tueMarch31BtnResult {
+#sunMarch29BtnResult, #monMarch30BtnResult, 
+#tueMarch31BtnResult, #thuApril2BtnResult, #cruxBtnResult, #satApril4BtnResult, 
+#resurrectionBtnResult, #monApril6BtnResult, #sunApril12BtnResult, #ascensionBtnResult {
     width: auto;
     height: calc(100vh - 300px) !important;
     overflow-y: scroll;
@@ -40,3 +83,38 @@ div#lastDaysContent.container-fluid div.row, div#lastDaysContent.container-fluid
     /*height: calc(100vh - 156px) !important;*/
     overflow: scroll;
 }
+
+#modalScrollable1Timeline, #modalScrollable2Timeline, #modalScrollable3Timeline, 
+#modalScrollable4Timeline, #modalScrollable5Timeline, #modalScrollable6Timeline, 
+#modalScrollable7Timeline, #modalScrollable8Timeline, #modalScrollable9Timeline, 
+#modalScrollable10Timeline {
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.centerText {
+    display: inline-block;
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/**** Screen Breakpoints Start ****/
+/**********************************/
+
+/*Small devices (landscape phones, 576px and down)*/
+@media (max-width: 576px) {
+    
+    #lastDaysCalendarButtonsContainer {
+        max-width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+}
+/**********************************/
+/**** Screen Breakpoints Start ****/

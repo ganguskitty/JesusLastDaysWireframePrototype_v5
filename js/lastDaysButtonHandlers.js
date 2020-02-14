@@ -56,7 +56,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displayCrucifixionDay'},
            success: function(result) {
-               $("#dayText").html(result);
+               $("#cruxBtnResult").html(result);
            }
         });
     });
@@ -67,7 +67,7 @@ $(document).ready(function () {
            type: 'POST',
            data: {method: 'displaySaturdayApril4'},
            success: function(result) {
-               $("#cruxBtnResult").html(result);
+               $("#satApril4BtnResult").html(result);
            }
         });
     });
